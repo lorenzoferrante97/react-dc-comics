@@ -8,9 +8,9 @@ export default function Header() {
             <header>
                 {/* logo */}
                 <figure>
-
+                    <img src="../../public/dc-logo.png" alt="DC Comics logo" />
                 </figure>
-                
+
                 {/* nav */}
                 <nav>
 
