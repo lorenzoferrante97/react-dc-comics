@@ -8,7 +8,7 @@ export default function Footer() {
         <>
             <footer>
                 {/* top footer */}
-                <div>
+                <div className="image-bg min-h-[28vh]">
 
                 </div>
 
