@@ -76,8 +76,39 @@ export default function Footer() {
                 </div>
 
                 {/* bottom footer */}
-                <div>
-                    
+                <div className="bg-gray-800">
+                    {/* bottom footer container */}
+                    <div className="w-[92%] mx-auto px-4 py-12 flex flex-col sm:flex-row items-center justify-between max-sm:gap-10">
+                        {/* button */}
+                        <button className="uppercase px-7 py-4 border-4 border-blue-400 text-white font-bold">Signup Now!</button>
+                        {/* social box */}
+                        <div className="flex flex-col md:flex-row justify-center items-cente gap-3 md:gap-7">
+                            <p className="uppercase font-bold text-blue-400">Follow us</p>
+                            {/* social icons */}
+                            <div className="flex gap-3">
+                                {/* fb */}
+                                <figure className="w-6 aspect-square">
+                                    <img src="src/assets/imgs/footer-facebook.png" alt="fb logo" className="w-full" />
+                                </figure>
+                                {/* periscope */}
+                                <figure className="w-6 aspect-square">
+                                    <img src="src/assets/imgs/footer-periscope.png" alt="periscope logo" className="w-full" />
+                                </figure>
+                                {/* pinterest */}
+                                <figure className="w-6 aspect-square">
+                                    <img src="src/assets/imgs/footer-pinterest.png" alt="pinterest logo" className="w-full" />
+                                </figure>
+                                {/* twitter */}
+                                <figure className="w-6 aspect-square">
+                                    <img src="src/assets/imgs/footer-twitter.png" alt="twitter logo" className="w-full" />
+                                </figure>
+                                {/* youtube */}
+                                <figure className="w-6 aspect-square">
+                                    <img src="src/assets/imgs/footer-youtube.png" alt="youtube logo" className="w-full" />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </>
