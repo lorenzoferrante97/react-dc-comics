@@ -23,7 +23,7 @@ export default function Header(props) {
                             {
                                 links.map((link) => {
                                     return (
-                                        <li key={link.id}><a href="{link.url}">{link.content}</a></li>
+                                        <li key={link.id} className={` hover:border-b-4 hover:border-blue-400 hover:text-blue-400 py-2 uppercase font-semibold ${link.isActive ? 'border-b-4 border-blue-400 text-blue-400' : ''}`}><a href="{link.url}">{link.content}</a></li>
                                     );
                                 })
                             }
