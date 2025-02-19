@@ -8,6 +8,7 @@ import Main from "./components/Main";
 import linksMain from "./data/linksMain";
 import linksShop from "./data/linksShop";
 import linksDc from "./data/linksDc";
+import linksSites from "./data/linksSites";
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
     <>
       <Header links={linksMain} />
       <Main />
-      <Footer linksMain={linksMain} linksShop={linksShop} linksDc={linksDc} />
+      <Footer linksMain={linksMain} linksShop={linksShop} linksDc={linksDc} linksSites={linksSites} />
     </>
   );
 }
