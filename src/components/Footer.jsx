@@ -14,7 +14,7 @@ export default function Footer(props) {
                     {/* top footer container */}
                     <div className="w-[92%] px-4 py-12 h-full flex flex-col sm:flex-row sm:justify-between sm:items-center">
                         {/* navigation */}
-                        <div className="flex flex-col sm:flex-wrap h-full gap-5">
+                        <div className="flex flex-col sm:flex-wrap h-full gap-5 z-20">
                             {/* navigation box */}
                             <div>
                                 <p className="text-white uppercase font-bold">Dc Comics</p>
@@ -82,7 +82,7 @@ export default function Footer(props) {
                         </div>
 
                         {/* logo image */}
-                        <figure className="hidden lg:inline-block relative xl:w-[60%]">
+                        <figure className="hidden md:inline-block relative xl:w-[60%] z-10 md:max-xl:left-40">
                             <img src="src/assets/imgs/dc-logo-bg.png" alt="DC logo" className="w-full" />
                         </figure>
                     </div>
