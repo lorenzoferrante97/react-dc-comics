@@ -6,6 +6,7 @@ import Main from "./components/Main";
 
 //import data
 import linksMain from "./data/linksMain";
+import linksShop from "./data/linksShop";
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
     <>
       <Header links={linksMain} />
       <Main />
-      <Footer linksMain={linksMain} />
+      <Footer linksMain={linksMain} linksShop={linksShop} />
     </>
   );
 }

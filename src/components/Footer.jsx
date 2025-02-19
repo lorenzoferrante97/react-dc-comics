@@ -4,13 +4,13 @@
 
 export default function Footer(props) {
 
-    const linksMain = props.linksMain;
+    const {linksMain, linksShop} = props;
 
     return (
         <>
             <footer>
                 {/* top footer */}
-                <div className="image-bg sm:h-[40vh] lg:h-[68vh] flex overflow-hidden justify-center items-center">
+                <div className="image-bg sm:h-[48vh] lg:h-[68vh] flex overflow-hidden justify-center items-center">
                     {/* top footer container */}
                     <div className="w-[92%] px-4 py-12 h-full flex flex-col sm:flex-row sm:justify-between sm:items-center">
                         {/* navigation */}
@@ -20,15 +20,15 @@ export default function Footer(props) {
                                 <p className="text-white uppercase font-bold">Dc Comics</p>
                                 {/* list */}
                                 <ul className="text-gray-400 flex sm:flex-col gap-3 sm:gap-1 max-sm:flex-wrap">
-                                {
-                                    linksMain.map((link) => {
-                                        return (
-                                            <li key={link.id} className={`hover:text-blue-400 ${link.isActive ? 'text-blue-400 font-semibold' : ''}`}>
-                                                <a href="{link.url}">{link.content}</a>
-                                            </li>
-                                        );
-                                    })
-                                }
+                                    {
+                                        linksMain.map((link) => {
+                                            return (
+                                                <li key={link.id} className={`hover:text-blue-400 ${link.isActive ? 'text-blue-400 font-semibold' : ''}`}>
+                                                    <a href="{link.url}">{link.content}</a>
+                                                </li>
+                                            );
+                                        })
+                                    }
                                 </ul>
                             </div>
                             {/* navigation box */}
@@ -36,8 +36,15 @@ export default function Footer(props) {
                                 <p className="text-white uppercase font-bold">Shop</p>
                                 {/* list */}
                                 <ul className="text-gray-400 flex sm:flex-col gap-3 sm:gap-1 max-sm:flex-wrap">
-                                    <li>Shop DC</li>
-                                    <li>Shop DC Collectibles</li>
+                                    {
+                                        linksShop.map((link) => {
+                                            return (
+                                                <li key={link.id} className={`hover:text-blue-400 ${link.isActive ? 'text-blue-400 font-semibold' : ''}`}>
+                                                    <a href="{link.url}">{link.content}</a>
+                                                </li>
+                                            );
+                                        })
+                                    }
                                 </ul>
                             </div>
                             {/* navigation box */}
