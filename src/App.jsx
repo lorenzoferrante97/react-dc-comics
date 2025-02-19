@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header links={linksMain} />
       <Main />
       <Footer />
     </>
