@@ -2,13 +2,15 @@
 
 // footer component function
 
-export default function Footer() {
+export default function Footer(props) {
+
+    const linksMain = props.linksMain;
 
     return (
         <>
             <footer>
                 {/* top footer */}
-                <div className="image-bg sm:h-[40vh] lg:h-[60vh] flex overflow-hidden justify-center items-center">
+                <div className="image-bg sm:h-[40vh] lg:h-[68vh] flex overflow-hidden justify-center items-center">
                     {/* top footer container */}
                     <div className="w-[92%] px-4 py-12 h-full flex flex-col sm:flex-row sm:justify-between sm:items-center">
                         {/* navigation */}
@@ -18,13 +20,15 @@ export default function Footer() {
                                 <p className="text-white uppercase font-bold">Dc Comics</p>
                                 {/* list */}
                                 <ul className="text-gray-400 flex sm:flex-col gap-3 sm:gap-1 max-sm:flex-wrap">
-                                    <li>Characters</li>
-                                    <li>Comics</li>
-                                    <li>Movies</li>
-                                    <li>TV</li>
-                                    <li>Games</li>
-                                    <li>Videos</li>
-                                    <li>News</li>
+                                {
+                                    linksMain.map((link) => {
+                                        return (
+                                            <li key={link.id} className={`hover:text-blue-400 ${link.isActive ? 'text-blue-400 font-semibold' : ''}`}>
+                                                <a href="{link.url}">{link.content}</a>
+                                            </li>
+                                        );
+                                    })
+                                }
                                 </ul>
                             </div>
                             {/* navigation box */}

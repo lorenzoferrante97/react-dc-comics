@@ -13,7 +13,7 @@ export default function Header(props) {
                 <div className="max-w-[92%] mx-auto flex flex-col md:flex-row justify-between items-center gap-5">
                     {/* logo */}
                     <figure className="w-14">
-                        <img src="../../public/dc-logo.png" alt="DC Comics logo" />
+                        <img src="/dc-logo.png" alt="DC Comics logo" />
                     </figure>
 
                     {/* nav */}

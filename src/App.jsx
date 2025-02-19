@@ -27,7 +27,7 @@ function App() {
     <>
       <Header links={linksMain} />
       <Main />
-      <Footer />
+      <Footer linksMain={linksMain} />
     </>
   );
 }
