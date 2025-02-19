@@ -4,7 +4,7 @@
 
 export default function Footer(props) {
 
-    const {linksMain, linksShop} = props;
+    const {linksMain, linksShop, linksDc} = props;
 
     return (
         <>
@@ -52,17 +52,15 @@ export default function Footer(props) {
                                 <p className="text-white uppercase font-bold">DC</p>
                                 {/* list */}
                                 <ul className="text-gray-400 flex sm:flex-col gap-3 sm:gap-1 max-sm:flex-wrap">
-                                    <li>Terms of use</li>
-                                    <li>Privacy Policy</li>
-                                    <li>Ad Choices</li>
-                                    <li>Advertising</li>
-                                    <li>Jobs</li>
-                                    <li>Subscriptions</li>
-                                    <li>Talent Workshops</li>
-                                    <li>CPSC Certificates</li>
-                                    <li>Ratings</li>
-                                    <li>Shop Help</li>
-                                    <li>Contact us</li>
+                                    {
+                                        linksDc.map((link) => {
+                                            return (
+                                                <li key={link.id} className={`hover:text-blue-400 ${link.isActive ? 'text-blue-400 font-semibold' : ''}`}>
+                                                    <a href="{link.url}">{link.content}</a>
+                                                </li>
+                                            );
+                                        })
+                                    }
                                 </ul>
                             </div>
                             {/* navigation box */}
