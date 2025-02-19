@@ -1,7 +1,10 @@
 
 // header component function
 
-export default function Header() {
+export default function Header(props) {
+
+    const links = props.links;
+
     return (
 
         <>
@@ -16,7 +19,7 @@ export default function Header() {
                     {/* nav */}
                     <nav className="md:max-lg:max-w-[72%]">
                         <ul className="flex flex-wrap gap-3 justify-center md:justify-end">
-                            <li>Characters</li>
+                            {/* <li>Characters</li>
                             <li>Comics</li>
                             <li>Movies</li>
                             <li>Tv</li>
@@ -25,7 +28,12 @@ export default function Header() {
                             <li>Videos</li>
                             <li>Fans</li>
                             <li>News</li>
-                            <li>Shop</li>
+                            <li>Shop</li> */}
+
+                            {
+
+                            }
+
                         </ul>
                     </nav>
                 </div>
