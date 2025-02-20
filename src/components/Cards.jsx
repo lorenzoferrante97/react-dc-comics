@@ -7,12 +7,15 @@ export default function Cards () {
 
         <>
             {/* cards container */}
-            <div>
-            {
-                comics.map( (card) => {
-                    <Card card={card} />
-                } )
-            }
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {
+                    comics.map( (card) => {
+
+                        return (
+                            <Card key={card.id} cardData={card} />
+                        )
+                    } )
+                }
             </div>
         </>
 
