@@ -2,17 +2,19 @@
 
 export default function Card (props) {
 
+    const { card } = props;
+
     return (
 
         <>
             {/* card */}
-            <div>
+            <div key={card.id}>
                 {/* card img */}
                 <figure>
-                    <img src="" alt="" />
+                    <img src="{card.thumb}" alt="{card.title}" />
                 </figure>
                 {/* card title */}
-                <p></p>
+                <p>{card.title}</p>
             </div>
         </>
 

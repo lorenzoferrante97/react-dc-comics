@@ -10,7 +10,7 @@ export default function Cards () {
             <div>
             {
                 comics.map( (card) => {
-                    <Card key={card.id} card={card} />
+                    <Card card={card} />
                 } )
             }
             </div>
